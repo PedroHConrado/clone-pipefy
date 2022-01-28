@@ -1,7 +1,17 @@
+import { Header } from "./components/Header"
+import { Board } from "./components/Board"
+import { GlobalStyles } from "./styles/GlobalStyles"
 
 function App() {
 
-  return <h1>Hello World</h1>
+  return (
+    <>
+    <Header />
+    <Board />
+    <GlobalStyles />
+    </>
+
+  )
 }
 
 export default App

@@ -4,15 +4,16 @@ import { Card } from "../Card"
 
 import { MdAdd } from 'react-icons/md'
 
-export function List() {
+export function List({ data }) {
     return (
        <Container>
            <header>
-               <h2>Tarefas</h2>
-               <button type="button">
+               <h2>{data.title}</h2>
+               {data.creatable && (
+                <button type="button">
                    <MdAdd size={24} color="#FFF" />
-                
                </button>
+               )}
            </header>
            <ul>
                <Card />
